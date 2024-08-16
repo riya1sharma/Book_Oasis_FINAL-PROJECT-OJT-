@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms and Conditions</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+    :root {
+      --primary-clr: #f96400;
+      --white: #fff;
+      --text-clr: #464646;
+      --tabs-list-bg-clr: #fde6c8;
+      --btn-hvr: #988bcf;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    body {
+      background: var(--primary-clr);
+      font-size: 12px;
+      color: var(--text-clr);
+    }
+
+    .flex_align_justify {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      padding: 0 20px;
+    }
+
+    .tc_wrap {
+      width: 700px;
+      max-width: 100%;
+      height: 450px;
+      background: var(--white);
+      display: flex;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .tc_wrap .tabs_list {
+      width: 200px;
+      background: var(--tabs-list-bg-clr);
+      height: 100%;
+    }
+
+    .tc_wrap .tabs_content {
+      width: calc(100% - 200px);
+      padding: 0 10px 0 20px;
+      height: 100%;
+    }
+
+    .tc_wrap .tabs_content .tab_head,
+    .tc_wrap .tabs_content .tab_foot {
+      color: var(--primary-clr);
+      padding: 25px 0;
+      height: 70px;
+    }
+
+    .tc_wrap .tabs_content .tab_head {
+      text-align: center;
+    }
+
+    .tc_wrap .tabs_content .tab_body {
+      height: calc(100% - 140px);
+      overflow: auto;
+    }
+
+    .tc_wrap .tabs_list ul {
+      padding: 70px 20px;
+      text-align: right;
+    }
+
+    .tc_wrap .tabs_list ul li {
+      padding: 10px 0;
+      position: relative;
+      margin-bottom: 3px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.5s ease;
+    }
+
+    .tc_wrap .tabs_list ul li:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 2px;
+      height: 100%;
+      background: var(--primary-clr);
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+
+    .tc_wrap .tabs_list ul li.active,
+    .tc_wrap .tabs_list ul li:hover {
+      color: var(--primary-clr);
+    }
+
+    .tc_wrap .tabs_list ul li.active:before {
+      opacity: 1;
+    }
+
+    .tc_wrap .tabs_content .tab_body .tab_item h3 {
+      padding-top: 10px;
+      margin-bottom: 10px;
+      color: var(--primary-clr);
+    }
+
+    .tc_wrap .tabs_content .tab_body .tab_item p {
+      margin-bottom: 20px;
+    }
+
+    .tc_wrap .tabs_content .tab_body .tab_item.active {
+      display: block !important;
+    }
+
+    .tc_wrap .tabs_content .tab_foot button {
+      width: 125px;
+      padding: 5px 10px;
+      background: transparent;
+      border: 1px solid;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    .tc_wrap .tabs_content .tab_foot button.decline {
+      margin-right: 15px;
+      border-color: var(--tabs-list-bg-clr);
+      color: var(--tabs-list-bg-clr);
+    }
+
+    .tc_wrap .tabs_content .tab_foot button.agree {
+      background: var(--primary-clr);
+      border-color: var(--primary-clr);
+      color: var(--white);
+    }
+
+    .tc_wrap .tabs_content .tab_foot button.decline:hover {
+      background: var(--tabs-list-bg-clr);
+      color: var(--white);
+    }
+
+    .tc_wrap .tabs_content .tab_foot button.agree:hover {
+      background: var(--btn-hvr);
+      border-color: var(--btn-hvr);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper flex_align_justify">
+    <div class="tc_wrap">
+      <div class="tabs_list">
+        <ul>
+          <li data-tc="tab_item_1" class="active">Terms of use</li>
+          <li data-tc="tab_item_2">Intellectual property rights</li>
+          <li data-tc="tab_item_3">Prohibited activities</li>
+          <li data-tc="tab_item_4">Termination clause</li>
+          <li data-tc="tab_item_5">Governing law</li>
+        </ul>
+      </div>
+      <div class="tabs_content">
+        <div class="tab_head">
+          <h2>Terms & Conditions</h2>
+        </div>
+        <div class="tab_body">
+          <div class="tab_item tab_item_1">
+            <h3>Terms of use</h3>
+            <p>Welcome to Book Oasis, your go-to platform for donating and acquiring old books. Our mission is to ignite a passion for reading by making books accessible to everyone, particularly in underserved communities. We believe in the power of knowledge and are committed to fostering a culture of learning and sharing through books.</p>
+
+<p>By using our platform, you agree to participate in a community that values respect, kindness, and the joy of reading. Please ensure that all books donated are in good condition and suitable for sharing. We encourage users to engage with the community responsibly and with a spirit of generosity.</p>
+
+<p>Book Oasis respects intellectual property rights and asks that users refrain from uploading or sharing any material that they do not have the legal right to distribute. Any content shared on our platform should align with our goal of promoting education and literacy.</p>
+
+<p>We reserve the right to remove any content or terminate accounts that violate our guidelines or are found to be harmful to the community. Our goal is to maintain a safe and positive environment where all users can benefit from the exchange of knowledge.</p>
+
+<p>By participating in Book Oasis, you agree to adhere to these terms, and we thank you for contributing to a world where knowledge and education are available to all.</p>
+
+          </div>
+          <div class="tab_item tab_item_2" style="display: none;">
+            <h3>Intellectual Property Rights</h3>
+            <p>At Book Oasis, we value and respect intellectual property rights and are committed to upholding them. All content available on our platform, including but not limited to text, images, logos, and graphics, is either owned by or licensed to Book Oasis. This content is protected by intellectual property laws and is intended solely for personal and non-commercial use.</p>
+            
+            <p>Users are prohibited from copying, modifying, distributing, or using any content from the Book Oasis website without prior written permission from the rightful owner. Any unauthorized use of content may result in legal action and termination of user accounts.</p>
+            
+            <p>If you believe that your intellectual property rights have been infringed upon by content on our platform, please contact us immediately with all relevant details so we can take appropriate action. We are committed to addressing any such concerns promptly and in accordance with applicable laws.</p>
+            
+            <p>By contributing content to Book Oasis, you represent that you have the legal right to do so and that your contribution does not violate any intellectual property rights. Book Oasis does not claim ownership of any content submitted by users but reserves the right to use, modify, and display such content in connection with the platform.</p>
+            
+          </div>
+          <div class="tab_item tab_item_3" style="display: none;">
+            <h3>Prohibited Activities</h3>
+<p>At Book Oasis, we strive to maintain a positive and respectful community. To ensure a safe and enjoyable experience for all users, the following activities are strictly prohibited:</p>
+
+<p>1. **Posting Inappropriate Content**: Do not upload or share content that is offensive, discriminatory, or harmful. This includes any material that promotes violence, hate speech, or illegal activities.</p>
+
+<p>2. **Unauthorized Commercial Use**: The use of Book Oasis for commercial purposes, including but not limited to advertising or selling products and services, is prohibited. Our platform is intended for the donation and sharing of books only.</p>
+
+<p>3. **Intellectual Property Violations**: Do not upload or distribute content that infringes on the intellectual property rights of others. Ensure that any books or materials you share are not subject to copyright restrictions or other legal limitations.</p>
+
+<p>4. **Misuse of User Data**: Respect the privacy and confidentiality of other users. Do not collect, use, or share personal information without consent, and do not engage in any activities that could compromise user security.</p>
+
+<p>5. **Abusive Behavior**: Engage with other users in a respectful and courteous manner. Harassment, bullying, or any form of abusive behavior will not be tolerated and may result in account suspension or termination.</p>
+
+<p>By using Book Oasis, you agree to adhere to these guidelines. Violations may result in actions taken against your account, including suspension or removal from the platform. Our goal is to foster a supportive and respectful community where everyone can benefit from the love of reading.</p>
+
+          </div>
+          <div class="tab_item tab_item_4" style="display: none;">
+            <h3>Termination clause</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
+          </div>
+          <div class="tab_item tab_item_5" style="display: none;">
+            <h3>Governing Law</h3>
+<p>The terms and conditions outlined on Book Oasis are governed by and construed in accordance with the laws of [Your Country/State]. Any disputes arising out of or related to the use of our platform or these terms will be subject to the exclusive jurisdiction of the courts located in [Your Country/State].</p>
+
+<p>By using Book Oasis, you agree to submit to the personal jurisdiction of the courts in [Your Country/State] and to abide by any legal proceedings or judgments rendered by these courts. This includes any legal disputes or claims that may arise regarding the interpretation, enforcement, or violation of these terms.</p>
+
+<p>If any provision of these terms is found to be invalid or unenforceable under applicable law, such provision will be deemed to be severable from the remaining provisions, which will continue in full force and effect.</p>
+
+<p>We encourage users to resolve any disputes amicably and in good faith. However, should legal action become necessary, all legal proceedings must be conducted in [Your Country/State], and each party shall bear its own legal costs.</p>
+
+          </div>
+        </div>
+        
+    </div>
+  </div>
+
+  <script>
+    var tab_lists = document.querySelectorAll(".tabs_list ul li");
+    var tab_items = document.querySelectorAll(".tab_item"); 
+
+    tab_lists.forEach(function(list){
+      list.addEventListener("click", function(){
+        var tab_data = list.getAttribute("data-tc");
+        
+        tab_lists.forEach(function(list){
+          list.classList.remove("active");
+        });
+        list.classList.add("active");
+        
+        tab_items.forEach(function(item){
+          var tab_class = item.getAttribute("class").split(" ");
+          if(tab_class.includes(tab_data)){
+            item.style.display = "block";
+          }
+          else{
+            item.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

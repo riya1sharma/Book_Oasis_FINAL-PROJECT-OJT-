@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Book Donation Drive </title>
+    <link rel="stylesheet" href="css/Read1.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="accordion">
+    <div class="image-box">
+      <img src="images/mainImg.png" alt="">
+    </div>
+    <div class="accordion-text">
+      <div class="title">FAQ</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">What are the main challenges faced by rural youth in accessing books and reading materials?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p> Rural areas often have fewer libraries and bookstores, making it difficult for youth to find books. Book Oasis bridges this gap by collecting books from donors and distributing them to rural areas, ensuring a steady supply of reading materials.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">How does reading contribute to the overall education and skill development of young people?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Reading diverse genres stimulates critical thinking and problem-solving skills, preparing youth for academic and real-life challenges.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">What strategies can be implemented to make reading more appealing to rural youth?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p> Organizing interactive reading sessions and book clubs to make reading a social and enjoyable activity..</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">How can community involvement enhance the effectiveness of the reading campaign?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Hosting community events like book fairs, reading challenges, and storytelling sessions to raise awareness and foster a reading culture.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">What role do parents and teachers play in fostering a love for reading among children??</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p> Parents can set an example by reading themselves and sharing stories with their children. Recognizing and encouraging students' reading efforts, providing guidance on book selections, and discussing the content to deepen understanding.</p>
+        <span class="line"></span>
+      </li>
+    </ul>
+    </div>
+  </div>
+
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>
